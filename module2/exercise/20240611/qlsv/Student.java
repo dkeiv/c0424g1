@@ -8,11 +8,7 @@ public class Student {
 
     // Khai bao phuong thuc
     public Student(String name, int id) {
-        this.name = name;
-        this.id = id;
-        this.GPA = 0.0;
-        this.phone = "";
-        this.email = "";
+        this(id, name, "", 0.0, "");
     }
 
     public Student(
