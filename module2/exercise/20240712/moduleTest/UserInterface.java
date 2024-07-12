@@ -6,7 +6,7 @@ import phone.Phone;
 import java.util.List;
 import java.util.Scanner;
 
-public class UserInterface {
+public class UserInterface implements Constants {
     private final Scanner scanner;
     private final PhoneManager phoneManager;
 
@@ -27,19 +27,19 @@ public class UserInterface {
 
                 switch (option) {
 
-                    case 1:
+                    case ADD:
                         add();
                         break;
-                    case 2:
+                    case REMOVE:
                         remove();
                         break;
-                    case 3:
+                    case SHOW:
                         show();
                         break;
-                    case 4:
+                    case SEARCH:
                         search();
                         break;
-                    case 5:
+                    case EXIT:
                         running = false;
                         break;
                     default:
